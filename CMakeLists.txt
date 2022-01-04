@@ -33,7 +33,7 @@ target_link_libraries(${STRING_ALGORITHMS_NAME} ${LINK_LIST})
 
 
 
-add_executable(StringAlgorithms main.cpp)
+add_executable(StringAlgorithms demo.cpp)
 
 #target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS})
 
