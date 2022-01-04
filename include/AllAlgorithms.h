@@ -6,5 +6,6 @@
 #define STRINGALGORITHMS_ALLALGORITHMS_H
 
 #include "LargestCommonSubstring.h"
+#include "DiffCharaNum.h"
 
 #endif //STRINGALGORITHMS_ALLALGORITHMS_H
