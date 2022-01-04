@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.17)
 project(StringAlgorithms)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -10,7 +10,8 @@ if (Boost_FOUND)
     message(STATUS "         include_dirs:${Boost_INCLUDE_DIRS}")
     message(STATUS "         library_dirs:${Boost_LIBRARY_DIRS}")
     message(STATUS "         libs:${Boost_LIBRARIES}")
-    list(APPEND LINK_LIST ${Boost_LIBRARY_DIRS}/libboost_regex-mgw49-mt-x64-1_69.a)
+    #list(APPEND LINK_LIST ${Boost_LIBRARY_DIRS}/libboost_regex-mgw49-mt-x64-1_69.a)   windows
+    list(APPEND LINK_LIST boost_regex)
 else()
     message(FATAL_ERROR "Boost not found")
 
