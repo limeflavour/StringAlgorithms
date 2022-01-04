@@ -17,11 +17,18 @@ else()
 endif ()
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
+
 set(STRING_ALGORITHMS_NAME string_algorithms)
-add_library(${STRING_ALGORITHMS_NAME} LargestCommonSubstring.cpp Utility.cpp)
+
+add_library(${STRING_ALGORITHMS_NAME}
+        LargestCommonSubstring.cpp
+        Utility.cpp
+        DiffCharaNum.cpp)
+
 target_include_directories(${STRING_ALGORITHMS_NAME} PUBLIC
         ${PROJECT_SOURCE_DIR}/include
         ${Boost_INCLUDE_DIRS})
+
 target_link_libraries(${STRING_ALGORITHMS_NAME} ${LINK_LIST})
 
 

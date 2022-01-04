@@ -1,5 +1,5 @@
 //
-// Created by Administrator on 2022/1/4.
+// Created by zxl on 2022/1/4.
 //
 #include "include/LargestCommonSubstring.h"
 #include "include/Utility.h"
