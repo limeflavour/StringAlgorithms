@@ -19,5 +19,7 @@ int main()
     int diffNum = ptrDCN->process();
     std::cout << "两个字符串所含不同字符数量: " << diffNum << std::endl;
 
+    (void)system("pause");
+
     return 0;
 }
