@@ -24,6 +24,8 @@ public:
 
     }
 
+    ~LargestCommonSubstring() = default;
+
     int process() override;
 };
 
