@@ -27,14 +27,14 @@ int DiffCharaNum::process()
     std::wstring wstr1 = limeflavour::string_To_wstring(str1);
     std::wstring wstr2 = limeflavour::string_To_wstring(str2);
 
-    int len1 = wstr1.length();
-    int len2 = wstr2.length();
+//    int len1 = wstr1.length();
+//    int len2 = wstr2.length();
 
     std::set<wchar_t> setWstr2;
 
     for (auto ws2 : wstr2)
     {
-        setWstr2.insert(ws2);
+        (void)setWstr2.insert(ws2);
     }
 
     int count = 0;
