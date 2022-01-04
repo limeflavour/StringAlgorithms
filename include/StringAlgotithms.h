@@ -5,8 +5,6 @@
 #ifndef STRINGALGORITHMS_STRINGALGOTITHMS_H
 #define STRINGALGORITHMS_STRINGALGOTITHMS_H
 
-#include <string>
-
 class StringAlgorithms
 {
 public:
