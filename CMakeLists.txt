@@ -21,9 +21,9 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 set(STRING_ALGORITHMS_NAME string_algorithms)
 
 add_library(${STRING_ALGORITHMS_NAME}
-        LargestCommonSubstring.cpp
-        Utility.cpp
-        DiffCharaNum.cpp)
+        src/LargestCommonSubstring.cpp
+        src/Utility.cpp
+        src/DiffCharaNum.cpp)
 
 target_include_directories(${STRING_ALGORITHMS_NAME} PUBLIC
         ${PROJECT_SOURCE_DIR}/include

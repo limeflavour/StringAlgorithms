@@ -1,8 +1,8 @@
 //
 // Created by zxl on 2022/1/4.
 //
-#include "include/LargestCommonSubstring.h"
-#include "include/Utility.h"
+#include "LargestCommonSubstring.h"
+#include "Utility.h"
 #include <vector>
 #include <string>
 #include <iostream>
