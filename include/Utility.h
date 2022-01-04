@@ -8,17 +8,17 @@
 
 namespace limeflavour
 {
-//UTF8×ªstring
+//UTF8è½¬string
     std::string UTF8_To_string(const std::string &str);
 
-//string×ªUTF8
+//stringè½¬UTF8
     std::string string_To_UTF8(const std::string &str);
 
-//string×ªwtring£¨¿í×Ö·û£©
-    std::wstring string_To_wstring(std::string &sTitle);
+//stringè½¬wtringï¼ˆå®½å­—ç¬¦ï¼‰
+    std::wstring string_To_wstring(std::string &str);
 
-//wstring(¿í×Ö·û)×ªstring
-    std::string wstring_To_string(std::wstring &wsTitle);
+//wstring(å®½å­—ç¬¦)è½¬string
+    std::string wstring_To_string(std::wstring &wstr);
 }
 
 #endif //STRINGALGORITHMS_UTILITY_H

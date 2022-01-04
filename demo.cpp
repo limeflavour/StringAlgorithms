@@ -5,21 +5,21 @@
 
 int main()
 {
-    std::string str1 = "µÚÎå±àµ³ÅÉÉçÍÅ";
-    std::string str2 = "µÚÎå±à ĞÖ7}ÊÏÉçÍÅ";
+    std::string str1 = "ç¬¬äº”ç¼–å…šæ´¾ç¤¾å›¢";
+    std::string str2 = "ç¬¬äº”ç¼– å…„7}æ°ç¤¾å›¢";
 
     std::cout << "str1: " << str1 << std::endl;
     std::cout << "str2: " << str2 << std::endl;
 
     std::unique_ptr<LargestCommonSubstring> ptrLCS(new LargestCommonSubstring(str1, str2, true));
     int comSubStringNum = ptrLCS->process();
-    std::cout << "Á½¸ö×Ö·û´®µÄ×î´ó¹«¹²×Ó´®Ëùº¬×Ö·ûÊı: " <<comSubStringNum << std::endl;
+    std::cout << "ä¸¤ä¸ªå­—ç¬¦ä¸²çš„æœ€å¤§å…¬å…±å­ä¸²æ‰€å«å­—ç¬¦æ•°: " <<comSubStringNum << std::endl;
 
     std::unique_ptr<DiffCharaNum> ptrDCN(new DiffCharaNum(str1, str2, true));
     int diffNum = ptrDCN->process();
-    std::cout << "Á½¸ö×Ö·û´®Ëùº¬²»Í¬×Ö·ûÊıÁ¿: " << diffNum << std::endl;
+    std::cout << "ä¸¤ä¸ªå­—ç¬¦ä¸²æ‰€å«ä¸åŒå­—ç¬¦æ•°é‡: " << diffNum << std::endl;
 
-    (void)system("pause");
+    //(void)system("pause");
 
     return 0;
 }
