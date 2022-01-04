@@ -12,7 +12,9 @@ int main()
     int comSubStringNum = ptrLCS->process();
     std::cout << "两个字符串的最大公共子串所含字符数: " <<comSubStringNum << std::endl;
 
-
+    std::unique_ptr<DiffCharaNum> ptrDCN(new DiffCharaNum(str1, str2, true));
+    int diffNum = ptrDCN->process();
+    std::cout << "两个字符串所含不同字符数量: " << diffNum << std::endl;
 
     return 0;
 }
