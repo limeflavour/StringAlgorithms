@@ -11,15 +11,17 @@ int main()
     std::cout << "str1: " << str1 << std::endl;
     std::cout << "str2: " << str2 << std::endl;
 
-    std::unique_ptr<LargestCommonSubstring> ptrLCS(new LargestCommonSubstring(str1, str2, true));
-    int comSubStringNum = ptrLCS->process();
+    std::unique_ptr<LargestCommonSubstring> ptrLCS(new LargestCommonSubstring());
+    int comSubStringNum = ptrLCS->process(str1, str2, true);
     std::cout << "两个字符串的最大公共子串所含字符数: " <<comSubStringNum << std::endl;
 
-    std::unique_ptr<DiffCharaNum> ptrDCN(new DiffCharaNum(str1, str2, true));
-    int diffNum = ptrDCN->process();
+    std::unique_ptr<DiffCharaNum> ptrDCN(new DiffCharaNum());
+    int diffNum = ptrDCN->process(str1, str2, true);
     std::cout << "两个字符串所含不同字符数量: " << diffNum << std::endl;
 
-    //(void)system("pause");
+    std::cout << "中文输出测试" << std::endl;
+
+    (void)system("pause");
 
     return 0;
 }

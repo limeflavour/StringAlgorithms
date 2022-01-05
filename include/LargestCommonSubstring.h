@@ -11,22 +11,17 @@
 
 class LargestCommonSubstring : public StringAlgorithms
 {
-private:
-    std::string str1;
-    std::string str2;
-    bool removeSpaces;
-
 public:
     LargestCommonSubstring() = default;
 
-    LargestCommonSubstring(std::string _str1, std::string _str2, bool _removeSpaces = false) : str1(std::move(_str1)), str2(std::move(_str2)), removeSpaces(_removeSpaces)
-    {
-
-    }
+//    LargestCommonSubstring(std::string _str1, std::string _str2, bool _removeSpaces = false) : str1(std::move(_str1)), str2(std::move(_str2)), removeSpaces(_removeSpaces)
+//    {
+//
+//    }
 
     ~LargestCommonSubstring() = default;
 
-    int process() override;
+    int process(std::string _str1, std::string _str2, bool _removeSpaces) override;
 };
 
 #endif //STRINGALGORITHMS_LARGESTCOMMONSUBSTRING_H

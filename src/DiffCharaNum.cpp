@@ -9,23 +9,23 @@
 #include <iostream>
 #include <boost/algorithm/string_regex.hpp>
 
-int DiffCharaNum::process()
+int DiffCharaNum::process(std::string _str1, std::string _str2, bool _removeSpaces = false)
 {
-    if (str1.empty() || str2.empty())
+    if (_str1.empty() || _str2.empty())
     {
         std::cout << "str1 or str2 is empty" << std::endl;
         return 0;
     }
 
-    if (removeSpaces)
+    if (_removeSpaces)
     {
-        boost::replace_all(str1, " ", "");
-        boost::replace_all(str2, " ", "");
+        boost::replace_all(_str1, " ", "");
+        boost::replace_all(_str2, " ", "");
     }
 
 
-    std::wstring wstr1 = limeflavour::string_To_wstring(str1);
-    std::wstring wstr2 = limeflavour::string_To_wstring(str2);
+    std::wstring wstr1 = limeflavour::string_To_wstring(_str1);
+    std::wstring wstr2 = limeflavour::string_To_wstring(_str2);
 
 //    int len1 = wstr1.length();
 //    int len2 = wstr2.length();
