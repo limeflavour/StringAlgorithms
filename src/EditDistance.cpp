@@ -8,7 +8,7 @@
 #include "boost/algorithm/string_regex.hpp"
 #include <vector>
 
-int EditDistance::process(std::string _str1, std::string _str2, bool _removeSpaces = false)
+int EditDistance::process(std::string _str1, std::string _str2, bool _removeSpaces)
 {
     if (_str1.empty() && _str2.empty())
     {

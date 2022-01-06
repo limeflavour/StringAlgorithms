@@ -11,6 +11,6 @@ class EditDistance : public StringAlgorithms
 public:
     EditDistance() = default;
     ~EditDistance() = default;
-    int process(std::string _str1, std::string _str2, bool _removeSpaces) override;
+    int process(std::string _str1, std::string _str2, bool _removeSpaces = false) override;
 };
 #endif //STRINGALGORITHMS_EDITDISTANCE_H

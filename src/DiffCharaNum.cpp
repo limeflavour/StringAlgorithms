@@ -9,7 +9,7 @@
 #include <iostream>
 #include <boost/algorithm/string_regex.hpp>
 
-int DiffCharaNum::process(std::string _str1, std::string _str2, bool _removeSpaces = false)
+int DiffCharaNum::process(std::string _str1, std::string _str2, bool _removeSpaces)
 {
     if (_str1.empty() || _str2.empty())
     {
