@@ -7,5 +7,6 @@
 
 #include "LargestCommonSubstring.h"
 #include "DiffCharaNum.h"
+#include "EditDistance.h"
 
 #endif //STRINGALGORITHMS_ALLALGORITHMS_H
