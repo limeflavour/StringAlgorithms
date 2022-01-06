@@ -77,6 +77,11 @@ int limeflavour::min(int x, int y)
     return x < y ? x : y;
 }
 
+int limeflavour::max(int x, int y)
+{
+    return x > y ? x : y;
+}
+
 bool limeflavour::wIsEqual(const wchar_t &a, const wchar_t &b)
 {
     if (a == b)

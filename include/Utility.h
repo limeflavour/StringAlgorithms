@@ -22,6 +22,8 @@ namespace limeflavour
 
     int min(int x, int y);
 
+    int max(int x, int y);
+
     bool wIsEqual(const wchar_t& a, const wchar_t& b);
 }
 
