@@ -19,6 +19,10 @@ namespace limeflavour
 
 //wstring(宽字符)转string
     std::string wstring_To_string(std::wstring &wstr);
+
+    int min(int x, int y);
+
+    bool wIsEqual(const wchar_t& a, const wchar_t& b);
 }
 
 #endif //STRINGALGORITHMS_UTILITY_H

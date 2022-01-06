@@ -72,3 +72,19 @@ std::string limeflavour::wstring_To_string(std::wstring &wstr)
     return converterX.to_bytes(wstr);
 }
 
+int limeflavour::min(int x, int y)
+{
+    return x < y ? x : y;
+}
+
+bool limeflavour::wIsEqual(const wchar_t &a, const wchar_t &b)
+{
+    if (a == b)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
