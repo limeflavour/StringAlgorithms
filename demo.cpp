@@ -19,7 +19,9 @@ int main()
     int diffNum = ptrDCN->process(str1, str2, true);
     std::cout << "两个字符串所含不同字符数量: " << diffNum << std::endl;
 
-    std::cout << "中文输出测试" << std::endl;
+    std::unique_ptr<EditDistance> ptrED(new EditDistance());
+    int editDistance = ptrED->process(str1, str2, true);
+    std::cout << "两个字符串的编辑距离为: " << editDistance << std::endl;
 
     (void)system("pause");
 

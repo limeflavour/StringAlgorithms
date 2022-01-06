@@ -24,7 +24,7 @@ set(STRING_ALGORITHMS_NAME string_algorithms)
 add_library(${STRING_ALGORITHMS_NAME}
         src/LargestCommonSubstring.cpp
         src/Utility.cpp
-        src/DiffCharaNum.cpp)
+        src/DiffCharaNum.cpp include/EditDistance.h src/EditDistance.cpp)
 
 target_include_directories(${STRING_ALGORITHMS_NAME} PUBLIC
         ${PROJECT_SOURCE_DIR}/include
